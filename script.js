@@ -2,18 +2,17 @@ const container = document.querySelector('.container');
 
 for (let i = 0; i < 50; i++) {
     let dock = document.createElement('div');
-    dock.classList.add('hot');
-    container.appendChild(dock)
+    dock.classList.add('color-dock');
+    container.appendChild(dock);
 }
 
-const upDock = document.querySelectorAll('.hot')
+const upDock = document.querySelectorAll('.color-dock')
 function setColor() {
     upDock.forEach((dock) => {
         const randomColorCode = randomColorGenerate();
         dock.style.backgroundColor = "#" + randomColorCode;
         dock.innerHTML = '#' + randomColorCode;
-
-    })
+    });
 }
 setColor();
 

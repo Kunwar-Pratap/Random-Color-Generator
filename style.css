@@ -16,8 +16,8 @@ h1 {
     margin: 3rem 0 2rem 0;
 }
 
-.hot {
-    background-color: orange;
+.color-dock {
+    background-color: rgb(240, 174, 52);
     height: 160px;
     width: 240px;
     margin: 10px;
